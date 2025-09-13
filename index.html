@@ -3,14 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de mi página</title>
+    <title>Formulario de Ejemplo</title>
     <style>
+        /* Estilos generales para el cuerpo y el formulario */
         body {
-            background-color: lightblue; /* Aquí puedes cambiar el color */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .formulario {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Estilo para el título del formulario */
+        .titulo-formulario {
+            color: #4b0082; /* Color morado oscuro para el título */
+        }
+
+        /* Estilo para el botón */
+        .boton {
+            background-color: #007bff; /* Color azul para el fondo del botón */
+            color: white; /* Color blanco para el texto del botón */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: #0056b3; /* Color azul oscuro al pasar el cursor */
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola! Este es mi primer sitio web.</h1>
+
+    <div class="formulario">
+        <h2 class="titulo-formulario">Iniciar Sesión</h2>
+        <form>
+            <p>
+                <label for="usuario">Usuario:</label>
+                <br>
+                <input type="text" id="usuario" name="usuario">
+            </p>
+            <p>
+                <label for="clave">Contraseña:</label>
+                <br>
+                <input type="password" id="clave" name="clave">
+            </p>
+            <button class="boton" type="submit">Entrar</button>
+        </form>
+    </div>
+
 </body>
 </html>
